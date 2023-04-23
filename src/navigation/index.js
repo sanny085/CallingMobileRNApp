@@ -13,8 +13,8 @@ const Stack = createNativeStackNavigator();
 const Navigation = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="IncomingCall">
-        {/* <Stack.Screen name="Login" component={LoginScreen} /> */}
+      <Stack.Navigator>
+        <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Contacts" component={ContactsScreen} />
 
         <Stack.Group screenOptions={{headerShown: false}}>
