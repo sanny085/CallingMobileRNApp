@@ -3,11 +3,14 @@ import {View, StyleSheet} from 'react-native';
 import CallActionBox from '../../components/CallActionBox';
 
 const CallScreen = () => {
+  const onHangupPress = () => {
+    call.current.hangup();
+  };
   return (
     <View style={styles.page}>
       <View style={styles.cameraPreview} />
 
-      <CallActionBox />
+      <CallActionBox onHangupPress={onHangupPress} />
     </View>
   );
 };
